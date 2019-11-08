@@ -1,13 +1,74 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.diamonds,
+.hearts {
+  color: red;
+}
+.spades,
+.clubs {
+  color: black;
+}
+
+.card {
+  font-size: 10px;
+
+  /* transition-property: left, top; */
+  background-color: antiquewhite;
+  background-image: url(/res/card-background.svg),
+    url(/res/jpg/snow_texture_256x256.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 100%, auto;
+  display: inline-block;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  vertical-align: middle;
+  padding: 1em;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) (+192px) */
+@media (min-width: 768px) {
+  .card {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) (+224px)*/
+@media (min-width: 992px) {
+  .card {
+    font-size: 18px;
+  }
+}
+
+/* Extra large devices (1200px and up) (+208px)*/
+@media (min-width: 1200px) {
+  .card {
+    font-size: 22px;
+  }
+}
+
+/* Large desktops (1600px and up) (+400px)*/
+@media (min-width: 1600px) {
+  .card {
+    font-size: 24px;
+  }
+  /* .card {
+      box-shadow: 2px 2px 4px black;
+  } */
 }
